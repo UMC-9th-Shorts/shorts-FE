@@ -1,3 +1,10 @@
+import { RouterProvider } from 'react-router-dom'
+import { AppRouter } from './components/AppRouter'
+
 export default function App() {
-  return <div className='text-2xl text-blue-700'>TailwindCSS test!</div>
+  return (
+    <div>
+      <RouterProvider router={AppRouter} />
+    </div>
+  )
 }
